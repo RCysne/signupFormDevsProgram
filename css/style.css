@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #000;
+  width: 100vw;
+  height: 100vh;
+}
+
+:root {
+--primary-color: hsl(0, 100%, 74%); 
+--second-color: hsl(154, 59%, 51%);
+
+--blue-color: hsl(248, 32%, 49%);
+
+--dark-blue: hsl(249, 10%, 26%);
+--grayish-blue: hsl(246, 25%, 77%);
+}
+
+::-webkit--scroll {
+  display: none;
+}
+
+#container {
+  margin: 0 auto;
+  width: 375px;
+  /* height: 100vh; */
+  background-color: var(--primary-color);
+  background-image: url('/images/bg-intro-mobile.png')
+}
+
+#header {
+  color: #f9f9f9;
+  width: 20rem;
+  margin: 0 auto;
+  text-align: center;
+  padding: 70px 0 50px 0;
+}
+
+#header h1 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+
+.card-price {
+  width: 20rem;
+  margin: 0 auto;
+  text-align: center;
+  background-color: var(--blue-color);
+  color: white;
+  padding: 1rem 3.5rem;
+  border-radius: 10px;
+  font-size: .9rem;
+  box-shadow: 0 5px 0 rgba(0, 0, 0, .2);
+}
+
+.card-price p span {
+  font-weight: bold;
+}
+
+form {
+  background-color: #f9f9f9;
+  width: 20rem;
+  margin: 1rem auto;
+  height: 45vh;
+  border-radius: 10px;
+  box-shadow: 0 5px 0 1px rgba(0, 0, 0, .2);
+}
+
+
+#input-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+#input-form input {
+  border: 1px solid var(--grayish-blue);
+  width: 17rem;
+  margin: .6rem auto;
+  height: 5.5vh;
+  border-radius: 5px;
+}
+
+#input-form input::placeholder {
+  font-size: .8rem;
+  font-weight: 600;
+  padding-left: 1rem;
+}
+
+.button-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn-submit {
+  background-color: var(--second-color);
+  border: none;
+  width: 17rem;
+  margin: .4rem auto;
+  height: 5.5vh;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-shadow: 0 5px 0 rgba(0, 0, 0, .2);
+}
+
+form p {
+  padding-top: 1rem;
+  font-size: .7rem;
+  margin: 0 auto;
+  text-align: center;
+  width: 15rem;
+  color: var(--grayish-blue)
+}
+
+form p span {
+  color: var(--primary-color);
+}
+
+footer {
+  text-align: center;
+  font-size: .5rem;
+  padding-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  #container {
+    width: 100%;
+  }
+
+  .card-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+@media (min-width: 768px) {
+  
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card-flex {
+    width: 80%;
+  }
+}
